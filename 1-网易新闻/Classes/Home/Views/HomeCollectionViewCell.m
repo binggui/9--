@@ -19,6 +19,7 @@
 -(void)awakeFromNib{
 
  
+    //你在哪里
     UIStoryboard *newsStoryboard = [UIStoryboard storyboardWithName:@"News" bundle:nil];
     self.newsVC = [newsStoryboard  instantiateInitialViewController];
     
