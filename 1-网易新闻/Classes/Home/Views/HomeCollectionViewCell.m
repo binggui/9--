@@ -22,6 +22,7 @@
     //看看忽略文件管用不
     UIStoryboard *newsStoryboard = [UIStoryboard storyboardWithName:@"News" bundle:nil];
     
+//    asda
     UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 0, 0)];
     self.newsVC = [newsStoryboard  instantiateInitialViewController];
     
