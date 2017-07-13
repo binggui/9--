@@ -19,7 +19,7 @@
 -(void)awakeFromNib{
 
     [super awakeFromNib];
-    //你在哪里,啊妹妹  在家里了的额
+    //看看忽略文件管用不
     UIStoryboard *newsStoryboard = [UIStoryboard storyboardWithName:@"News" bundle:nil];
     
     UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 0, 0)];
