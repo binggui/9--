@@ -7,8 +7,6 @@ build/
 DerivedData/
 
 ## Various settings
-*.xcuserstate
-*.xcbkptlist
 *.pbxuser
 !default.pbxuser
 *.mode1v3
@@ -29,7 +27,6 @@ xcuserdata/
 *.ipa
 *.dSYM.zip
 *.dSYM
-
 
 # CocoaPods
 #
