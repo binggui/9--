@@ -21,6 +21,8 @@
     [super awakeFromNib];
     //你在哪里,啊妹妹  在家里了的额
     UIStoryboard *newsStoryboard = [UIStoryboard storyboardWithName:@"News" bundle:nil];
+    
+    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 0, 0)];
     self.newsVC = [newsStoryboard  instantiateInitialViewController];
     
 //    self.newsVC.tableView.backgroundColor = [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0];
