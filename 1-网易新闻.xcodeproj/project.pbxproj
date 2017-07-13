@@ -27,6 +27,7 @@
 		72E93C9E1D3E1D4300F4B95C /* channelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E93C9D1D3E1D4300F4B95C /* channelModel.m */; };
 		72E93CA01D3E1D7D00F4B95C /* topic_news.json in Resources */ = {isa = PBXBuildFile; fileRef = 72E93C9F1D3E1D7D00F4B95C /* topic_news.json */; };
 		72E93CA31D3E249100F4B95C /* channelLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E93CA21D3E249100F4B95C /* channelLabel.m */; };
+		72FA90351EB780CE009C35E4 /* TestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FA90341EB780CE009C35E4 /* TestTableViewController.m */; };
 		D5B90C6DE09A25EE774011DC /* libPods-1-网易新闻.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BDD3AAF378D151441978460 /* libPods-1-网易新闻.a */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		72497B981D3E2CA400D26F5D /* NewsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableViewController.h; sourceTree = "<group>"; };
 		72497B991D3E2CA400D26F5D /* NewsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewController.m; sourceTree = "<group>"; };
 		72497B9B1D3E2CB500D26F5D /* News.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
+		72764F941EB786AF00686699 /* Header1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header1.h; sourceTree = "<group>"; };
 		72E28B0B1D4215A6007DCC62 /* CycleCollectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CycleCollectionController.h; sourceTree = "<group>"; };
 		72E28B0C1D4215A6007DCC62 /* CycleCollectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CycleCollectionController.m; sourceTree = "<group>"; };
 		72E28B0E1D421628007DCC62 /* CycleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CycleModel.h; sourceTree = "<group>"; };
@@ -68,6 +70,9 @@
 		72E93C9F1D3E1D7D00F4B95C /* topic_news.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = topic_news.json; path = Others/topic_news.json; sourceTree = "<group>"; };
 		72E93CA11D3E249100F4B95C /* channelLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = channelLabel.h; sourceTree = "<group>"; };
 		72E93CA21D3E249100F4B95C /* channelLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = channelLabel.m; sourceTree = "<group>"; };
+		72FA90331EB780CE009C35E4 /* TestTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableViewController.h; sourceTree = SOURCE_ROOT; };
+		72FA90341EB780CE009C35E4 /* TestTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableViewController.m; sourceTree = SOURCE_ROOT; };
+		72FA90361EB78117009C35E4 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		835449A2BC822294F326F9DA /* Pods-1-网易新闻.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-1-网易新闻.release.xcconfig"; path = "Pods/Target Support Files/Pods-1-网易新闻/Pods-1-网易新闻.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,6 +160,7 @@
 				72E93C7E1D3E17F200F4B95C /* Main.storyboard */,
 				72497B9B1D3E2CB500D26F5D /* News.storyboard */,
 				72E93C751D3E17F200F4B95C /* Supporting Files */,
+				72764F941EB786AF00686699 /* Header1.h */,
 			);
 			path = "1-网易新闻";
 			sourceTree = "<group>";
@@ -242,6 +248,8 @@
 			children = (
 				72E93C7B1D3E17F200F4B95C /* ViewController.h */,
 				72E93C7C1D3E17F200F4B95C /* ViewController.m */,
+				72FA90331EB780CE009C35E4 /* TestTableViewController.h */,
+				72FA90341EB780CE009C35E4 /* TestTableViewController.m */,
 			);
 			path = Controlers;
 			sourceTree = "<group>";
@@ -258,6 +266,7 @@
 			children = (
 				72497B951D3E2C1F00D26F5D /* HomeCollectionViewCell.h */,
 				72497B961D3E2C1F00D26F5D /* HomeCollectionViewCell.m */,
+				72FA90361EB78117009C35E4 /* Header.h */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -349,7 +358,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = jake;
+				ORGANIZATIONNAME = aspire;
 				TargetAttributes = {
 					72E93C711D3E17F200F4B95C = {
 						CreatedOnToolsVersion = 7.2;
@@ -455,6 +464,7 @@
 				72E28B131D421ABB007DCC62 /* CycleCollectionViewCell.m in Sources */,
 				723334F71D40BCE000993125 /* NewsTableViewCell.m in Sources */,
 				72E93C771D3E17F200F4B95C /* main.m in Sources */,
+				72FA90351EB780CE009C35E4 /* TestTableViewController.m in Sources */,
 				72E28B0D1D4215A6007DCC62 /* CycleCollectionController.m in Sources */,
 				72E93C9E1D3E1D4300F4B95C /* channelModel.m in Sources */,
 			);

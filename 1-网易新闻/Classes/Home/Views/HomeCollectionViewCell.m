@@ -18,8 +18,8 @@
 @implementation HomeCollectionViewCell
 -(void)awakeFromNib{
 
- 
-    //你在哪里
+    [super awakeFromNib];
+    //你在哪里,啊妹妹
     UIStoryboard *newsStoryboard = [UIStoryboard storyboardWithName:@"News" bundle:nil];
     self.newsVC = [newsStoryboard  instantiateInitialViewController];
     
