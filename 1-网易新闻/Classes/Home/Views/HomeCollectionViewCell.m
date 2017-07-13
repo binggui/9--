@@ -19,7 +19,7 @@
 -(void)awakeFromNib{
 
     [super awakeFromNib];
-    //你在哪里,啊妹妹
+    //你在哪里,啊妹妹  在家里了的额
     UIStoryboard *newsStoryboard = [UIStoryboard storyboardWithName:@"News" bundle:nil];
     self.newsVC = [newsStoryboard  instantiateInitialViewController];
     
