@@ -19,7 +19,7 @@
 -(void)awakeFromNib{
 
     [super awakeFromNib];
-    //看看忽略文件管用不
+    //增加全局忽略文件
     UIStoryboard *newsStoryboard = [UIStoryboard storyboardWithName:@"News" bundle:nil];
     
 //    asda
