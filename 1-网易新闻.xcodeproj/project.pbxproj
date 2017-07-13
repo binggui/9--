@@ -45,6 +45,7 @@
 		72497B981D3E2CA400D26F5D /* NewsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableViewController.h; sourceTree = "<group>"; };
 		72497B991D3E2CA400D26F5D /* NewsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewController.m; sourceTree = "<group>"; };
 		72497B9B1D3E2CB500D26F5D /* News.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
+		72764F941EB786AF00686699 /* Header1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header1.h; sourceTree = "<group>"; };
 		72E28B0B1D4215A6007DCC62 /* CycleCollectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CycleCollectionController.h; sourceTree = "<group>"; };
 		72E28B0C1D4215A6007DCC62 /* CycleCollectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CycleCollectionController.m; sourceTree = "<group>"; };
 		72E28B0E1D421628007DCC62 /* CycleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CycleModel.h; sourceTree = "<group>"; };
@@ -159,6 +160,7 @@
 				72E93C7E1D3E17F200F4B95C /* Main.storyboard */,
 				72497B9B1D3E2CB500D26F5D /* News.storyboard */,
 				72E93C751D3E17F200F4B95C /* Supporting Files */,
+				72764F941EB786AF00686699 /* Header1.h */,
 			);
 			path = "1-网易新闻";
 			sourceTree = "<group>";
