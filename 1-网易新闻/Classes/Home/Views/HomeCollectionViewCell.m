@@ -22,8 +22,6 @@
     //增加全局忽略文件
     UIStoryboard *newsStoryboard = [UIStoryboard storyboardWithName:@"News" bundle:nil];
     
-//    asda
-    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 0, 0)];
     self.newsVC = [newsStoryboard  instantiateInitialViewController];
     
 //    self.newsVC.tableView.backgroundColor = [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0];

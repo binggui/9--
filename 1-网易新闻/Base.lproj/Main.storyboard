@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eyE-y8-7cK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eyE-y8-7cK">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--网易新闻-->
@@ -23,7 +27,7 @@
                                     <constraint firstAttribute="height" constant="44" id="bbx-y0-Ipx"/>
                                 </constraints>
                             </scrollView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Wz4-JG-qg2">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Wz4-JG-qg2">
                                 <rect key="frame" x="0.0" y="108" width="375" height="559"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="r22-7O-czd">
                                     <size key="itemSize" width="0.0" height="0.0"/>
@@ -33,11 +37,10 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ID" id="XSy-zN-EFw" customClass="HomeCollectionViewCell">
-                                        <rect key="frame" x="0.0" y="279.5" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="280" width="0.0" height="0.0"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                     </collectionViewCell>
                                 </cells>
@@ -47,15 +50,18 @@
                                 </connections>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Wz4-JG-qg2" secondAttribute="trailing" id="6VB-Zh-UKg"/>
                             <constraint firstItem="xqh-Bn-5fF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="VJY-xx-DiW"/>
                             <constraint firstItem="xqh-Bn-5fF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="XQU-he-9I0"/>
                             <constraint firstAttribute="trailing" secondItem="xqh-Bn-5fF" secondAttribute="trailing" id="nqc-dT-fJb"/>
+                            <constraint firstItem="Wz4-JG-qg2" firstAttribute="top" secondItem="xqh-Bn-5fF" secondAttribute="bottom" id="nwJ-Af-x5h"/>
+                            <constraint firstItem="Wz4-JG-qg2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uQq-8H-txS"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Wz4-JG-qg2" secondAttribute="bottom" id="vMZ-3j-XdF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="网易新闻" id="CQm-7t-aig"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="TitleScrollView" destination="xqh-Bn-5fF" id="jHC-GO-flE"/>
                         <outlet property="collectionView" destination="Wz4-JG-qg2" id="Kti-cq-cpW"/>
@@ -71,7 +77,6 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eyE-y8-7cK" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="nLG-i9-PWy">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -83,7 +88,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5UQ-D0-7RJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="274" y="307"/>
+            <point key="canvasLocation" x="154" y="282"/>
         </scene>
     </scenes>
 </document>

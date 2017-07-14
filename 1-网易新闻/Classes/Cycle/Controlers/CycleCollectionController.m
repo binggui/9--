@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UICollectionViewFlowLayout *flowLayout;
 @property (strong, nonatomic) NSArray * listArr;
 @property (strong, nonatomic) UIPageControl * pageControl;
+@property (strong, nonatomic) NSTimer * timer;
 @end
 
 @implementation CycleCollectionController
@@ -76,9 +77,10 @@ static NSString * const reuseIdentifier = @"Cell";
 
         
         //刷新之后,把items滚到第四个
-        NSIndexPath *indexPath = [NSIndexPath indexPathForItem:self.listArr.count inSection:0];
+        NSIndexPath *indexPath = [NSIndexPath indexPathForItem:0 inSection:0];
         [self.collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:0 animated:NO];
         
+        [self timer];
         
     } failBlock:^(NSError *error) {
         NSLog(@"error %@",error);
@@ -114,11 +116,81 @@ static NSString * const reuseIdentifier = @"Cell";
 
     [self.collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:0 animated:NO];
     
+      [self timer];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+
+
+/**
+  *  当scorllView滚动的时候会调用这个方法
+  *
+  */
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    //计算到第几个item
+    NSInteger index = scrollView.contentOffset.x / scrollView.bounds.size.width;
+    
+    
+ 
+    //设置page跟着滚动
+    self.pageControl.currentPage = index % self.listArr.count;
+}
+
+
+/**
+  *  用户开始拖动scrollView时会调用这个方法
+  *
+  */
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
+    //当用户开始拖动scrollView时，停止定时器
+    [self.timer invalidate];
+
+    //定时器一旦被停止，就无法再被唤醒，所以可以把它置为nil
+    self.timer = nil;
+}
+
+
+
+/**
+  *  复写timer的get方法
+  *
+  */
+- (NSTimer *)timer{
+    
+    if(_timer == nil){
+    //创建一个定时器。每隔1秒钟自动调用 playPicture 方法
+    _timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(playPicture) userInfo:nil repeats:YES];
+
+    //默认的定时器模式不能同时处理定时器和界面，需要把定时器的模式设置为 NSRunLoopCommonModes
+    [[NSRunLoop mainRunLoop] addTimer:_timer forMode:NSDefaultRunLoopMode];
+    }
+    return _timer;
+}
+
+
+
+
+- (void)playPicture{
+   
+    NSInteger newPage = self.pageControl.currentPage + 1;
+    //计算item的总个数
+    NSInteger items = [self.collectionView numberOfItemsInSection:0];
+    //2.如果当前页是最后一页，将当前页置为0
+    if (newPage == items / 2 ) {
+        newPage = 0;
+
+    }
+    
+    //准备索引
+    NSIndexPath *indexPath =  [NSIndexPath indexPathForItem:newPage inSection:0];
+    
+    [self.collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:0 animated:YES];
 }
 
 
@@ -145,6 +217,15 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 
 #pragma mark <UICollectionViewDelegate>
+
+-(void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath{
+
+//    //刷新之后,把items滚到第四个
+//    NSIndexPath *indexP = [NSIndexPath indexPathForItem:0 inSection:0];
+//    [self.collectionView scrollToItemAtIndexPath:indexP atScrollPosition:0 animated:NO];
+//
+//    [self timer];
+}
 
 /*
 // Uncomment this method to specify if the specified item should be highlighted during tracking
