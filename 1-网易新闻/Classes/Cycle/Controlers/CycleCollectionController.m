@@ -136,8 +136,6 @@ static NSString * const reuseIdentifier = @"Cell";
     //计算到第几个item
     NSInteger index = scrollView.contentOffset.x / scrollView.bounds.size.width;
     
-    
- 
     //设置page跟着滚动
     self.pageControl.currentPage = index % self.listArr.count;
 }
