@@ -17,8 +17,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+<<<<<<< HEAD
     //第三次
     //master 2
+=======
+    //123123124123213123
+>>>>>>> BG
     return YES;
 }
 
