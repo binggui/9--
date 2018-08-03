@@ -16,8 +16,8 @@
 @property (weak, nonatomic) IBOutlet UIScrollView *TitleScrollView;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (weak, nonatomic) IBOutlet UICollectionViewFlowLayout *flowOut;
-
-@property (strong, nonatomic)  NSArray * channelArr;
+@property (strong, nonatomic) UILabel * labelName;
+@property (strong, nonatomic)  NSArray * channelArr;//不好
 
 @property (strong, nonatomic) NSMutableArray * labArr;
 @end

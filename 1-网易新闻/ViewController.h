@@ -13,9 +13,6 @@
 @property (strong, nonatomic) NSString * name;
 //你好girl
 //hello分支 里的更改
-//不好
-//别的
-//不太大
-//打算发顺丰
+//鞍山看见了
 @end
 
